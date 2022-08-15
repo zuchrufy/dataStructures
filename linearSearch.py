@@ -51,7 +51,7 @@ i = 0
 linearSearch(arr,i,lim,target)
 
 
-
+#   ini adalah pencarian linear menggunakan for loop dengan metode brute force
 def func (arr,target):
     for i in arr:
         if i == target:

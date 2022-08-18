@@ -72,7 +72,7 @@ def pop(stack):
 stack = stack()
 for i in range(0,17):
     push(stack,str(i))
-<<<<<<<
+
 
 
 #   contoh program menggunakan stack 
@@ -103,6 +103,3 @@ isi_stack = pushStack(stack,"jupri")
 stack_dibalik = dibalik_kalimat(isi_stack,reversed_stack)
 
 print(stack_dibalik)
-=======
-
->>>>>>>

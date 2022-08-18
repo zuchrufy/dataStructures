@@ -29,4 +29,54 @@ basic_operation = {
 
 }
 
-print(basic_operation)
+#   working flow of queue:
+    #   2 pointers FRONT and REAR
+    #   FRONT : melacak element pertama dari queue
+    #   REAR  : melacak element terakhir dari queue
+    #   menginisialisasikan , FRONT and REAR berniali -1 
+
+#   enqueue operation flow:
+    #   periksa apakah queueu isFull
+    #   untuk elemen pertama set value front == 0
+    #   naikan value REAR index dengan + 1
+    #   tambahkan elemen baru di posisi rear
+
+#   dequeue operation flow:
+    #   memeriksa apa queue kosong atau tidak 
+    #   return value FRONT
+    #   naikan value FRONT index by 1
+    #   for the last elment, reset the values of FRONT and REAR to -1
+
+
+class Queue:
+    def __init__(self):
+        self.queue = []
+        
+    
+    def enqueu(self, item):
+        self.queue.append(item)
+
+    def isEmpty(self):
+        return len(self.queue)-1 == -1
+
+            
+    def dequeue(self):
+        if self.enqueu(self):
+           return None
+        return self.queue.pop(0) 
+
+    def display(self):
+        print(self.queue)
+
+    def size(self):
+        return len(self.qeueu)       
+
+queue = Queue()
+
+for i in range(0,16):
+    queue.enqueu(i)
+queue.display()
+
+for i in range(0,12):
+    queue.dequeue()
+queue.display()

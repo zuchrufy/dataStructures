@@ -10,12 +10,16 @@
 
 
 
-basic_element_dari_stack_adalah = {
-    "push":"untuk menaruh element kedalam stack",
-    "pop":"untuk mengeluarkan element dalam stack",
-    "isempty":"untuk melihat apakah stack kosong",
-    "isfull":"untuk melihat apakah stack penuh",
-    "peek":"untuk melihat element stack paling atas tanpa mengambil data "
+asic_element_dari_stack_adalah = {
+    "push"      :   "untuk menaruh element kedalam stack",
+    
+    "pop"       :   "untuk mengeluarkan element dalam stack",
+    
+    "isempty"   :   "untuk melihat apakah stack kosong",
+    
+    "isfull"    :   "untuk melihat apakah stack penuh",
+    
+    "peek"      :   "untuk melihat element stack paling atas tanpa mengambil data "
     }
 
 # ------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -68,6 +72,7 @@ def pop(stack):
 stack = stack()
 for i in range(0,17):
     push(stack,str(i))
+<<<<<<<
 
 
 #   contoh program menggunakan stack 
@@ -98,3 +103,6 @@ isi_stack = pushStack(stack,"jupri")
 stack_dibalik = dibalik_kalimat(isi_stack,reversed_stack)
 
 print(stack_dibalik)
+=======
+
+>>>>>>>

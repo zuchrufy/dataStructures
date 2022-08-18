@@ -36,31 +36,65 @@ basic_element_dari_stack_adalah = {
 
 #___________________________________________ CODE IMPLEMENTATION OF STACK VALUE_________________________________________________________________________________
 
+
+    #   untuk membuat list tempat menampung stack
 def stack():
     stack = []
     return stack
 
+#   untuk mengecek apakah stack kosong 
 def isempty(stack):
     return len(stack) -1 == -1
 
 
+#   tempat mengecek apakah stack penuh
 def isfull(stack):
     return len(stack)-1 == 16 
 
+#   tempat untuk menaruh data di stack
 def push(stack, item):
     if isfull(stack):
         return print("maaf stack sudah penuh")
     stack.append(item)
     return print("stack pushed " + item)
 
+#   tempat untuk mengeluarkan stack
 def pop(stack):
     if isempty(stack):
         return print("stack sudah kosong")
-    return print(stack[-1:])
+    return stack.pop()
 
-
-
+ 
 stack = stack()
 for i in range(0,17):
     push(stack,str(i))
-print(stack)
+
+
+#   contoh program menggunakan stack 
+#   membentuk reverse word
+
+
+
+def create_stack():
+    stack = []
+    return stack
+#   untuk memasukan stack
+def pushStack(stack,kalimat):
+    stack[:0] = kalimat
+    return stack
+
+def dibalik_kalimat(stack,new_stack):
+    for i in range(0,len(stack)):
+        stackPoped = stack.pop()
+
+        new_stack.append(stackPoped)
+    return new_stack
+    
+stack = create_stack()
+reversed_stack = create_stack()
+
+isi_stack = pushStack(stack,"jupri")
+
+stack_dibalik = dibalik_kalimat(isi_stack,reversed_stack)
+
+print(stack_dibalik)
